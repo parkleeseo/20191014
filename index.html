@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The BEATLES</title>
+	<style>
+
+		@font-face { font-family: 'S-CoreDream-8Heavy'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-8Heavy.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+		header{height: 500px;}
+		section{height: 1400px; position: relative;}
+		img{position: absolute;}
+		.white{background:white;}
+		.green{background:green;}
+		.yellow{background:yellow;}
+		.wrap{margin: auto; position: relative;}
+		header .wrap, footer .wrap{width: 100%}
+
+		header .wrap{ 
+			background:url(first.jpg);
+			background-size: cover;
+			background-position: 0px -130px;
+			height:700px; }
+
+		.pan{background: black; height:700px;
+				opacity: 0.4; transition: all 1s}
+		.pan:hover{ opacity: 0.7; }
+
+
+		.pannn .wrap{ 
+			background:url(haa.jpg);
+			background-size: cover;
+			background-position: 0px -130px;
+			height:700px; }
+
+.pannn{background: black; height:1400px;
+				opacity: 0.1; transition: all 1s}
+		.pannn:hover{ opacity: 0.5; }
+
+
+
+		.pann{background: white; height:15px;
+				opacity: 0.4; transition: all 1s}
+		.pann:hover{ opacity: 0.7; }
+
+		img{position: absolute;}
+		header .wrap h1{
+			font-size: 80px;
+			color:white; 
+			position: absolute; 
+			top:250px; 
+			left:calc(50% - 420px);}
+
+		@keyframes ro{
+			from{left: 100px;}
+			to{left: 1200px;transform: rotate(360deg);}
+		}
+
+
+		@keyframes roo{
+			from{left: 100px;}
+			to{left: 1100px;transform: rotate(360deg);}
+		}
+
+		@keyframes rooo{
+			from{right: 100px;}
+			to{right: 1100px;transform: rotate(360deg);}
+		}
+
+
+		@keyframes roooo{
+			from{left: 100px;}
+			to{left: 160px;transform: rotate(360deg);}
+		}
+
+		@keyframes roooo1{
+			from{left: 100px;}
+			to{left: 310px;transform: rotate(360deg);}
+		}
+
+
+		@keyframes dis{
+			to{opacity:0;top:130px;}
+		}
+
+
+		@keyframes bt{
+		from{top: 500px; opacity: 0;}
+		to{top: 100px; opacity: 1;}
+	}
+
+
+		@keyframes dis1{
+			from{width:40%;opacity: 0;}
+			to{width:40%;opacity: 1;}
+		}
+
+
+		@keyframes dis11{
+			from{width:40%;opacity: 0;}
+			to{width:40%;opacity: 1;}
+		}
+
+		@keyframes dis111{
+			from{width:40%;opacity: 0;}
+			to{width:40%;opacity: 1;}
+		}
+
+
+		#img1{top: 50px; left:130px; width: 500px;}
+
+		#img3{top: 250px; left: 130px;}
+		#img4{top: 200px;}
+		#img5{top: 300px;}
+
+
+		#moniter{position: fixed; background:black; padding: 5px; top: 0; right: 0; width: 70px; height: 20px; color: white;}
+
+		#a{background-color: white; background-size: cover;
+			background-attachment: fixed;}
+
+		#b{background: url(pho.jpg); background-size: cover;
+			background-attachment: fixed;}
+
+		#bb{background: url(pink1.png); background-size: cover;
+			;background-attachment: fixed;}
+
+		#c{background-color:white; background-size: cover;
+			background-attachment: fixed;}
+
+		#d{background: url(pink.png); background-size: cover;
+			background-attachment: fixed;}
+
+
+		#ee{background-color: white; background-size: cover;
+			background-attachment: fixed;}
+
+		#e{background: url(haa.jpg); background-size: cover;
+			background-attachment: fixed;}
+
+		.text1{width: 600px; color: black; position: absolute; top: 80px; font-size: 63px; line-height: 1.5;left: 760px; font-family:'S-CoreDream-8Heavy';}
+
+
+		.text2{width: 600px; color: black; position: absolute; top: 210px; font-size: 18px; line-height: 1.5;left: 800px; font-family:'S-CoreDream-8Heavy';}
+
+
+
+
+		.text{width:400px; color:white; position: absolute; 
+				top:200px; font-size: 0.7em; line-height: 1.5;
+				 left:400px; opacity: 0;}
+
+		.text-block{position: absolute; top: 70px; color: white;}
+
+		.text2{width: 600px; color: white; position: absolute; top: 1330px; font-size: 18px;left: 400px; font-family:'S-CoreDream-8Heavy'; text-align: center;text-shadow: 1.5px 1.5px gray}
+
+		.text22{width: 600px; color: black; position: absolute; top: 260px; font-size: 30px;left: 800px; font-family:'S-CoreDream-8Heavy'; text-align: left;}
+
+		.text23{width: 600px; color: black; position: absolute; top: 810px; font-size: 30px;left: 400px; font-family:'S-CoreDream-8Heavy'; text-align: left;text-shadow:4px 4px white}
+
+
+		.text3{width: 600px; color:black; position: absolute; top: 60px; font-size: 38px;left: 100px; font-family:'S-CoreDream-8Heavy'; text-align: left;text-shadow:2px 2px lightgray}
+
+		.text4{width: 1300px; color:white; position: absolute; top: 800px; font-size: 23px;left: 120px; font-family:'S-CoreDream-8Heavy'; text-align: center;}
+
+		.text5{width: 800px; color:black; position: absolute; top: 800px; font-size: 20px; left: 30px; font-family:'S-CoreDream-8Heavy'; text-align: left;}
+
+		.text6{width: 800px; color:black; position: absolute; top: 920px; font-size: 20px; right:370px; font-family:'S-CoreDream-8Heavy'; text-align: left;}
+
+		.text7{width: 600px; color:black; position: absolute; top: 1150px; font-size: 20px;right: 40px;  font-family:'S-CoreDream-8Heavy'; text-align: left;}
+
+		.text9{width: 1500px; color:white; position: absolute;  font-size: 60px; top: 30px; font-family:'S-CoreDream-8Heavy'; text-align: center;text-shadow: 3px 3px gray}
+
+		.text10{width: 600px; font-color:white; position: absolute; top: 380px; font-size: 18px;left: 800px; font-family:'S-CoreDream-8Heavy'; text-align: left;text-shadow: 1px 1px gray; margin: auto;padding: 0px;}
+
+		.text11{width: 600px; color:white; position: absolute; top: 180px; font-size: 38px;left: 800px; font-family:'S-CoreDream-8Heavy'; text-align: left;text-shadow: 1px 1px gray}
+
+		.text12{width: 600px; color:black; position: absolute; top: 580px; font-size: 28px;left: 800px; font-family:'S-CoreDream-8Heavy'; text-align: left;text-shadow: 1px 1px gray; background-color: white;}
+
+
+		footer{background:white;}
+		footer .wrap{height: 100px;}
+
+	</style>
+</head>
+<body id="mybody">
+	
+
+		<header>
+			<div class="wrap">
+			<div class="pan"></div>
+			<h1 style="position: absolute; font-size: 47px;left: 650px;text-align: center; ">비틀즈<br><span style="font-size: 67px;text-shadow: 3px 3px black"> 그들은?</span> </h1>
+			</div>
+		</header>
+
+
+
+		<section class="white" id="a">
+
+			<img src="pho.png" style="width: 500px; top: 950px; left: 150px;" id="img2">
+
+		<div class="wrap" id="t2" >
+			<p class="text22">1960년 영국의 리버풀에서 결성된 <br>록 밴드. <br>존 레넌, 폴 매카트니, 조지 해리슨, 링고 스타가 주요멤버이다.</p>
+
+
+			<p class="text23">
+				1962년 데뷔싱글 러브 미 두(Love Me Do)로 시작하여<br> 1970년 마지막 앨범 렛 잇 비(Let It Be)를 남기고 해산하기까지 <br>비틀스만의 철학과 선율이 담긴 음악 양식을 선보이며 대중음악의 스펙트럼을 확장시켰다. 
+			</p>
+
+		</div>
+
+		<img src="11621326.jpg" style="width: 600px;top: 200px;" id="img1" >
+
+		<img src="move.gif" style="width:450px; top: 750px; position: absolute;" id="t8">
+
+		<div class="text-block">
+			<h3 style="animation: ltor 3s forwards linear infinite; position: absolute; font-size: 140px;font-family:'S-CoreDream-8Heavy';margin: auto;opacity: 0.7; font-color:black;">천재들의 데뷔</h3>
+		</div>
+
+
+	 </section>
+
+
+
+
+
+	<section class="green" id=b style="height: 800px;">
+
+
+		<img src="star.gif" style="width: 300px; top: 280px; left: 250px;position: absolute;" id="oh">
+		<img src="star.gif" style="width: 300px; top: 280px; right: 250px;position: absolute;" id="ohh" >
+
+		 </section>
+
+
+
+
+	<section class="yellow" id=c>
+
+		<img src="33.jpg" style="width: 390px;" id="img3">
+		<img src="movie.gif" style="width: 250px;left: 460px;top: 350px;">
+		<img src="movie2.gif" style="width: 250px;left: 610px;top:350px;">
+
+
+		<div style="height: 2200px;" >
+
+			<h1 class="text3" id="ohhh">
+				"영국 출발부터 미국 도착까지<br> 일거수일투족 생중계"
+			</h1>
+
+			<p  class="text5" id="dis1">
+				이날 오후 1시 35분, 비틀즈는 미국 뉴욕에 있는 케네디 공항에 내렸다. 1만 명이 넘는 10대들이 공항을 가득 메우고 함성을 질렀다. 괴성을 질러대는 팬들 사이를 뚫고 비틀즈가 공항에 마련된 기자회견장에 도착했다.
+			</p>
+
+			<p  class="text6" id="dis11" >
+				“노래 한 곡 해주시겠어요?”<br>
+				“돈을 먼저 주셔야죠” 존 레논이 대답했다.<br>
+				“여러분을 나이 든 세대에 대한 사회적인 반항의 일부라고 할 수 있나요?”<br>
+				“지저분한 거짓말이군요.”<br>
+				“베토벤에 대해 어떻게 생각하나요?”<br>
+				“멋진 분이죠. 특히 그 분이 쓴 시는 정말 멋져요.”<br>
+				링고 스타의 대답이었다.<br>
+			</p>
+
+
+			<p class="text7" id="dis111">
+
+				이틀 뒤인 2월 9일 밤 비틀즈가 출연한 TV프로그램 ‘에드 설리번쇼’가 방송됐다. 이날 방송은 당시까지 최고 기록이었다. ‘에드 설리번쇼’가 방영되는 동안 뉴욕에서는 자동차 휠캡 도난 사고조차 한 건도 일어나지 않았다.<br> 미국 전역에서 10대가 일으킨 주요 범죄는 단 한 건도 없었던 것이다. <br>비틀즈가 미국에서 공연한 1964년 2월 첫 주, 그들의 노래는 미국 히트 차트 1위에 올랐다. 
+			</p>
+
+
+		</div>
+
+		 </section>
+
+
+		 <section id="d">
+		 	<img src="4441.jpg" style="width:800px;top: 250px; left: 500px; box-shadow: 3px 3px gray" id="dis2">
+		 	<img src="wow.gif" style= "width:300px; top:450px;" id="t15">
+		 	<img src="wow.gif" style= "width:300px; top:450px;left: 1100px;" id="t15">
+
+		 <div >
+
+		 <h1  class="text9">
+		 	지방 도시 라이브 클럽의 최고 인기 밴드 '실버 비틀즈' 
+		 </h1>
+
+		 <p class="text4">
+		 	1959년에 이르러서야 이들은 <span style="font-size: 45px; line-height: 2px 2px lightgray;">‘비틀즈’</span>란 이름을 사용하기 시작한다. <br>“딱정벌레(beetles)라는 이름이 떠올랐다. 나는 그 철자를 BEAT-les로 바꾸어 써보았다. 비트(beat)음악을 연상시키는 말장난이었다.”라고 존은 밝히고 있다. <br><br><br>그러나 당시 밴드 이름은 길어야 한다는 유행에 따라 ‘키다리 존과 실버 비틀즈(Long John and the Silver Beatles)'라고 붙였다. 그리고 한 오디션에서 이름을 물었을 때 '실버 비틀즈'라고 말한 뒤부터 '실버 비틀즈'는 1959년 내내 이들의 이름이 됐다. 어쨌든 ‘실버 비틀즈’로 활동하던 이들은 1960년 독일 함부르크로 옮겨가 연주활동을 시작한다. <br>당시 이들의 멤버는 존 레논, 폴 매카트니, 조지 해리슨과 드러머로 피트 베스트, 베이스로 스튜어트 서트클리프 등이었다. <br><br><br>비틀즈는 함부르크에서 1960년 12월 초까지 머물렀다. 조지는 당시 겨우 17세로 아직 미성년자여서 학생여권을 가지고 있는 상태였다.
+
+		 </p>
+		 	
+		 </section>
+
+
+		 		 </section>
+
+
+		 <section id="ee">
+
+
+		 <div class="pann">
+
+		 	<img src="7-1.png" style="width: 335px; top: 500px;">
+		 	<img src="7-2.png" style="width: 335px; top: 500px; left: 375px;">
+		 	<img src="7-3.png" style="width: 335px; top: 500px; left: 745px;">
+		 	<img src="7-4.png" style="width: 335px; top: 500px; left: 1130px;">
+		 	
+		 </div>
+		 </section>
+
+
+
+		 <section id="e">
+
+
+		 <div class="pannn">
+
+		 <p class="text12" >
+		 	1960년 12월 리버풀로 돌아온 비틀즈는 리버풀 중심가의 최고 라이브 클럽으로 자리잡고 있던 캐번 클럽에서 공연을 시작했다.<br><br>
+		 	  1961년 1월부터 1962년 2월까지 1년여 동안 이들은 모두 292회의 공연을 가지며 리버풀 최고의 밴드가 되었다. <br><br>그러나 이들은 아직 영국의 한 지방도시의 인기 밴드일 뿐이었다.</div>
+
+		 </p>
+		 	
+		 </section>
+
+
+
+
+
+
+
+	<div id="moniter"></div>
+
+
+
+	<script type="text/javascript">
+
+
+		window.onscroll = function(){
+		var t = document.documentElement.scrollTop + document.body.scrollTop;
+		moniter.innerHTML = t.toFixed(1);
+
+
+
+		if(t > 4){ t8.style.animation = "ro 2s forwards";}
+		else{ t8.style.animation = ""}
+
+		if(t > 1500){ oh.style.animation = "roo 2s forwards";}
+		else{ oh.style.animation = ""}
+
+		if(t > 1500){ ohh.style.animation = "rooo 2s forwards";}
+		else{ ohh.style.animation = ""}
+
+
+		if(t > 1700){ ohhh.style.animation = "rooo 2s forwards";}
+		else{ ohhh.style.animation = ""}
+
+
+		if(t > 2500){ dis1.style.animation = "dis1 5s forwards";}
+		else{ dis1.style.animation = ""}
+
+		if(t > 2550){ dis11.style.animation = "dis11 9s forwards";}
+		else{ dis11.style.animation = ""}
+
+		if(t > 2600){ dis111.style.animation = "dis111 11s forwards";}
+		else{ dis111.style.animation = ""}
+
+
+		if(t > 3700){ dis2.style.animation = "roooo1 2s forwards";}
+		else{ dis2.style.animation = ""}
+		
+
+
+
+
+
+	}
+
+	</script>
+
+	<footer>
+			<div class="wrap">
+				<p style="font-color:white;text-align: center;">Copyrightⓒ2019 parkleeseo All rights reserved.</p>
+			</div>
+		</footer>
+
+
+</body>
+</html>
